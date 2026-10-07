@@ -26,5 +26,17 @@ while(true){
      for (const linha of linhas){
         tratarLinha(linha.trim());
      }
+    function tratarLinha(linha) {
+        if (!linha) return;
+
+        try {
+            const dados = JSON.parse(linha);
+            campoTemperatura.textContent = dados.temperatura;
+            campoLuminosidade.textContent = dados.luminosidade;
+        }catch (erro) {
+            console.log('Linha ignorada:', linha);
+        }
+    }
+    
 }
 }
