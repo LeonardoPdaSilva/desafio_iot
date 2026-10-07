@@ -1,0 +1,43 @@
+<style>
+.painel { max-width: 760px; margin: 40px auto; padding: 24px; }
+
+.cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+
+.card { background: white; border-radius: 12px; padding: 24px; }
+
+.card strong { font-size: 34px; color: #e30613; }
+
+
+</style>
+
+<main class="painel">
+
+<h1>SmartClass</h1>
+
+<button id="conectar">Conectar ao Arduino</button>
+
+<p id="status">Arduino desconectado</p>
+
+<section class="cards">
+
+SmartClass-Arduino UNO DHT11/DHT22+ LDR
+
+<article class="card">
+
+<h2>Temperatura</h2>
+
+<strong><span id="temperatura">--</span> °C</strong>
+
+</article>
+
+<article class="card">
+
+<h2>Luminosidade</h2>
+
+<strong><span id="luminosidade">--</span> %</strong>
+
+</article>
+
+</section>
+
+</main>
